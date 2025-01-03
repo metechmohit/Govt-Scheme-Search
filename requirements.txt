@@ -1,8 +1,7 @@
 streamlit==1.39.0
-requests==2.25.1
+requests
 pdfplumber==0.11.5
 langchain-community==0.0.16
 openai==0.28
 faiss-cpu==1.7.4
 unstructured
-pickle
