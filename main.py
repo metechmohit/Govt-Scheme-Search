@@ -58,7 +58,7 @@ def process_url(url):
     content = loader.load(url)
     if content:
         st.write("Content Loaded Successfully for URL:", url)
-        st.text_area("Content Preview", content[:500], height=300)
+        st.text_area("Content Preview", content, height=300)
         embedding = get_embedding(content)
         index.add(embedding.reshape(1, -1))
         save_faiss_index()
