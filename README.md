@@ -20,8 +20,8 @@ The Scheme Research Tool is designed to facilitate the analysis of government sc
 ### Installation and Setup
 1. **Clone the repository**:
    ```bash
-   git clone https://your-repository-url.com
-   cd your-repository-directory
+   git clone https://github.com/metechmohit/Govt-Scheme-Search/
+   cd Govt-Scheme-Search
    ```
 
 2. **Install Required Packages**:
@@ -30,7 +30,7 @@ The Scheme Research Tool is designed to facilitate the analysis of government sc
    ```
 
 3. **Configuration**:
-   - Place your OpenAI API key in the `.config` file under the `[openai]` section:
+   - Place your OpenAI API key in the `config.ini` file under the `[openai]` section:
      ```
      [openai]
      api_key = your_api_key
@@ -42,7 +42,7 @@ The Scheme Research Tool is designed to facilitate the analysis of government sc
    ```
 
 ### Usage
-- **Launch the application**: Open your web browser and visit `http://localhost:8501` or the URL provided by Streamlit after running the command.
+- **Launch the application**: Open your web browser and visit `http://localhost:8501` or the URL `https://govt-scheme-search.streamlit.app/`
 - **Input a URL or Upload a File**: Enter the URL of a government scheme article or upload a `.txt` file with multiple URLs.
 - **Interact and Query**: After processing URLs, use the text input field to ask specific questions about the schemes. The system will respond based on the content it has processed.
 - **View Embeddings and Summaries**: Check the sidebar and main display area for results and summaries.
