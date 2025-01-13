@@ -108,8 +108,8 @@ def process_url(url):
                     st.session_state.chunks.append(chunk)
                     st.session_state.faiss_index.add(embedding.reshape(1, -1))
             
-            st.success(f"Successfully processed {len(st.session_state.chunks)} chunks from the document")
-            st.info(f"Total chunks stored: {len(st.session_state.chunks)}")
+            # st.success(f"Successfully processed {len(st.session_state.chunks)} chunks from the document")
+            # st.info(f"Total chunks stored: {len(st.session_state.chunks)}")
         else:
             st.error("Failed to load content from URL")
             
