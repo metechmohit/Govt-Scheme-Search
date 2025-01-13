@@ -172,10 +172,10 @@ def main():
                 context = "\n\n".join(relevant_chunks)
 
                 # Debug info
-                with st.expander("Debug Info"):
-                    st.write("Number of chunks found:", len(relevant_chunks))
-                    st.write("Context length:", len(context))
-                    st.write("Closest chunk preview:", relevant_chunks[0][:200] if relevant_chunks else "No chunks found")
+                # with st.expander("Debug Info"):
+                #     st.write("Number of chunks found:", len(relevant_chunks))
+                #     st.write("Context length:", len(context))
+                #     st.write("Closest chunk preview:", relevant_chunks[0][:200] if relevant_chunks else "No chunks found")
 
                 messages = [
                     {"role": "system", "content": (
@@ -189,7 +189,7 @@ def main():
                 with st.spinner("Generating response..."):
                     try:
                         response = openai.ChatCompletion.create(
-                            model="gpt-4",
+                            model="gpt-4o",
                             messages=messages,
                             max_tokens=500,
                             temperature=0.7
